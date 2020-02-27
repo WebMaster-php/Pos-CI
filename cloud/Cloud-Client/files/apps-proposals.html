@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>VersiPOS - Proposals</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <meta content="VersiPOS" name="description" />
+        <meta content="" name="author" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+        <!-- App favicon -->
+        <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+        <!-- DataTables -->
+        <link href="../plugins/datatables/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css"/>
+        <link href="../plugins/datatables/responsive.bootstrap4.min.css" rel="stylesheet" type="text/css"/>
+
+        <!-- App css -->
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/icons.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+
+        <script src="assets/js/modernizr.min.js"></script>
+
+    </head>
+
+    <body>
+
+        <!-- Navigation Bar-->
+        <header id="topnav">
+            <div class="topbar-main">
+                <div class="container-fluid">
+
+                    <!-- Logo container-->
+                    <div class="logo">
+                        <!-- Text Logo -->
+                        <!-- <a href="index.html" class="logo">
+                            <span class="logo-small"><i class="mdi mdi-radar"></i></span>
+                            <span class="logo-large"><i class="mdi mdi-radar"></i> Highdmin</span>
+                        </a> -->
+                        <!-- Image Logo -->
+                        <a href="index.html" class="logo">
+                            <img src="assets/images/logo_sm.png" alt="" height="26" class="logo-small">
+                            <img src="assets/images/logo.png" alt="" height="22" class="logo-large">
+                        </a>
+
+                    </div>
+                    <!-- End Logo container-->
+
+
+                    <div class="menu-extras topbar-custom">
+
+                        <ul class="list-unstyled topbar-right-menu float-right mb-0">
+
+                            <li class="menu-item">
+                                <!-- Mobile menu toggle-->
+                                <a class="navbar-toggle nav-link">
+                                    <div class="lines">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                </a>
+                                <!-- End mobile menu toggle-->
+                            </li>
+                           
+
+                            <li class="dropdown notification-list">
+                                <a class="nav-link dropdown-toggle arrow-none waves-effect" data-toggle="dropdown" href="#" role="button"
+                                   aria-haspopup="false" aria-expanded="false">
+                                    <i class="fi-bell noti-icon"></i>
+                                    <span class="badge badge-danger badge-pill noti-icon-badge">1</span>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right dropdown-lg">
+
+                                    <!-- item-->
+                                    <div class="dropdown-item noti-title">
+                                        <h6 class="m-0"><span class="float-right"><a href="" class="text-dark"><small>Clear All</small></a> </span>Annoucements</h6>
+                                    </div>
+
+                                    <div class="slimscroll" style="max-height: 230px;">
+                                        <!-- item-->
+                                        <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                            <div class="notify-icon bg-success"><i class="mdi mdi-comment-account-outline"></i></div>
+                                            <p class="notify-details">Some New Annoucement<small class="text-muted">1 min ago</small></p>
+                                        </a>
+
+                                      <!-- All-->
+                                    <a href="javascript:void(0);" class="dropdown-item text-center text-primary notify-item notify-all">
+                                        View all <i class="fi-arrow-right"></i>
+                                    </a>
+                                    </div>
+
+                                    
+
+                                </div>
+                            </li>
+
+                            
+
+                            <li class="dropdown notification-list">
+                                <a class="nav-link dropdown-toggle waves-effect nav-user" data-toggle="dropdown" href="#" role="button"
+                                   aria-haspopup="false" aria-expanded="false">
+                                    <img src="assets/images/users/avatar-1.jpg" alt="user" class="rounded-circle"> <span class="ml-1 pro-user-name">Jonathan G<i class="mdi mdi-chevron-down"></i> </span>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right profile-dropdown ">
+                                    <!-- item-->
+                                    <div class="dropdown-item noti-title">
+                                        <h6 class="text-overflow m-0">Welcome !</h6>
+                                    </div>
+
+                                    <!-- item-->
+                                    <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                        <i class="fi-head"></i> <span>Profile</span>
+                                    </a>
+
+                                    <!-- item-->
+                                    <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                        <i class="fi-cog"></i> <span>Company Details</span>
+                                    </a>
+
+                                    <!-- item-->
+                                    <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                        <i class="fi-help"></i> <span>Annoucements</span>
+                                    </a>
+
+                                    <!-- item-->
+                                    <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                        <i class="fi-power"></i> <span>Logout</span>
+                                    </a>
+
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- end menu-extras -->
+
+                    <div class="clearfix"></div>
+
+                </div> <!-- end container -->
+            </div>
+            <!-- end topbar-main -->
+
+            <div class="navbar-custom">
+                <div class="container-fluid">
+                    <div id="navigation">
+                        <!-- Navigation Menu-->
+                        <ul class="navigation-menu">
+
+                            <li class="has-submenu">
+                                <a href="index.html"><i class="icon-speedometer"></i>Dashboard</a>
+                            </li>
+
+                            <li class="has-submenu">
+                                <a href="apps-tickets.html"><i class="icon-support"></i>Support</a>
+                            </li>
+
+                            <!--<li class="has-submenu">
+                                <a href="#apps-projects.html"><i class="icon-layers"></i>Projects</a>
+                            </li>-->
+
+                            <li class="has-submenu">
+                                <a href="apps-proposals.html"><i class="icon-docs"></i>Proposals</a>
+                            </li>
+
+                            <li class="has-submenu">
+                                <a href="#extras-search-results.html"><i class="icon-briefcase"></i>Knowledge Base</a>
+                            </li>
+
+                            <li class="has-submenu">
+                                <a href="#extras-search-results.html"><i class="icon-layers"></i>Files</a>
+                            </li>
+
+
+
+                        </ul>
+                        <!-- End navigation menu -->
+                    </div> <!-- end #navigation -->
+                </div> <!-- end container -->
+            </div> <!-- end navbar-custom -->
+        </header>
+        <!-- End Navigation Bar-->
+
+
+        <div class="wrapper">
+            <div class="container-fluid">
+
+                <!-- Page-Title -->
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="page-title-box">
+                            <div class="btn-group pull-right">
+                                <ol class="breadcrumb hide-phone p-0 m-0">
+                                    <li class="breadcrumb-item"><a href="#">Jonathan G</a></li>
+                                    <li class="breadcrumb-item active">Proposal</li>
+                                </ol>
+                            </div>
+                            <h4 class="page-title">Proposals</h4>
+                        </div>
+                    </div>
+                </div>
+                <!-- end page title end breadcrumb -->
+
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card-box">
+                            <h4 class="header-title">Manage Proposals</h4>
+
+                            
+
+
+                            <table class="table table-hover m-0 tickets-list table-actions-bar dt-responsive nowrap" cellspacing="0" width="100%" id="datatable">
+                                <thead>
+                                <tr>
+                                    <th>Proposal Number</th>
+                                    <th>Subject</th>
+                                    <th>Total</th>
+                                    <th>Date Sent</th>
+                                    <th>Open Till</th>
+                                    <th>Status</th>
+                                    <th class="hidden-sm">Actions</th>
+                                </tr>
+                                </thead>
+
+                                <tbody>
+                                <tr>
+                                    <td><b>#1256</b></td>
+                                   
+
+                                    <td>
+                                        New Proposal
+                                    </td>
+
+                                    <td>
+                                        $100
+                                    </td>
+
+                                    <td>
+                                        06/23/2018
+                                    </td>
+
+                                    <td>
+                                        09/30/2018
+                                    </td>
+
+                                    <td>
+                                        <span class="badge badge-success">Accepted</span>
+                                    </td>
+
+                                    
+
+                                    <td>
+                                        <a><i class="mdi mdi-eye mr-2 text-muted font-18 vertical-middle"></i>View</a>
+                                    </td>
+
+                                    
+                                </tr>
+
+                                
+
+                                 <tr>
+                                    <td><b>#1529</b></td>
+                                   
+
+                                    <td>
+                                        Another Proposal
+                                    </td>
+
+                                    <td>
+                                        $10
+                                    </td>
+
+                                    <td>
+                                        06/20/2018
+                                    </td>
+
+                                    <td>
+                                        08/12/2018
+                                    </td>
+
+                                    <td>
+                                        <span class="badge badge-danger">Rejected</span>
+                                    </td>
+
+                                    
+
+                                    <td>
+                                        <a><i class="mdi mdi-eye mr-2 text-muted font-18 vertical-middle"></i>View</a>
+                                    </td>
+
+                                    
+                                </tr>
+
+                                
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div><!-- end col -->
+                </div>
+                <!-- end row -->
+
+            </div> <!-- end container -->
+        </div>
+        <!-- end wrapper -->
+
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        2018 © VersiPOS
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- End Footer -->
+
+
+        <!-- jQuery  -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/popper.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/waves.js"></script>
+        <script src="assets/js/jquery.slimscroll.js"></script>
+
+        <script src="../plugins/datatables/jquery.dataTables.min.js"></script>
+        <script src="../plugins/datatables/dataTables.bootstrap4.min.js"></script>
+        <script src="../plugins/datatables/dataTables.responsive.min.js"></script>
+
+        <!-- App js -->
+        <script src="assets/js/jquery.core.js"></script>
+        <script src="assets/js/jquery.app.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $('#datatable').dataTable();
+            });
+        </script>
+
+
+    </body>
+</html>

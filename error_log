@@ -1,0 +1,1 @@
+[09-Mar-2018 10:47:01 UTC] PHP Fatal error:  session_start(): Failed to initialize storage module: user (path: tblsessions) in /home/fennixpr/public_html/Projects/Versipos/crm/system/libraries/Session/Session.php on line 143
